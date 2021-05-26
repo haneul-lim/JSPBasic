@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 프로그램</title>
+</head>
+<body>
+<h1>회원가입</h1>
+<form name="memberfrm" method="post" action="JSTL-members.jsp">
+	<div>아이디 : <input type="text" name="userid"></div>
+	<div>비밀번호 : <input type="password" name="passwd"></div>
+	<div>비밀번호 확인 : <input type="password" name="repasswd"></div>
+	<div>이름 : <input type="text" name="name"></div>
+	<div>생년월일 : <select name="byear">
+					<option>2021</option>
+					<option>2020</option>
+					<option>2019</option>
+					<option>2018</option>
+				  </select>년
+				<select name="bmonth">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+				</select>월
+				<select name="bday">
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+				</select>일
+	</div>
+	<div>이메일 : <input type="text" name="email"></div>
+	<div>성별 : <input type="radio" name="gender" value="1">남
+		<input type="radio" name="gender" value="2">여
+	</div>
+	<div>핸드폰 : <select name="hp1">
+					<option>010</option>
+					<option>011</option>
+					<option>016</option>
+					<option>017</option>
+				  </select>
+				- <input type="text" name="hp2" size="5">
+				- <input type="text" name="hp3" size="5">
+	</div>
+	
+	<div><button type="submit">입력완료</button></div>
+</form>
+
+</body>
+</html>
